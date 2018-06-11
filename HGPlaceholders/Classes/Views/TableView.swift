@@ -120,7 +120,7 @@ open class TableView: UITableView {
     fileprivate var defaultTableFooterView: UIView?
     
     /// the placeHolderStatus is used to show tableview's current status
-    open var placeHolderStatus: PlaceHolderStatusEnum?
+    open var placeHolderStatus: PlaceHolderStatusEnum!
     
     // MARK: - init methods
     

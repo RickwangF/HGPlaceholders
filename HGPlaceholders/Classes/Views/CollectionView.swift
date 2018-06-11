@@ -90,7 +90,7 @@ open class CollectionView: UICollectionView {
     fileprivate let placeholderLayout = UICollectionViewFlowLayout()
     
     /// the placeHolderStatus is used to show collectionView's current status
-    open var placeHolderStatus: PlaceHolderStatusEnum?
+    open var placeHolderStatus: PlaceHolderStatusEnum!
     
     // MARK: - init methods
     
