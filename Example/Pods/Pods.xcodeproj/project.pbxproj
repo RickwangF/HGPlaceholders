@@ -10,6 +10,8 @@
 		089370598E9BA3FEB0E82D5E9D6C92B1 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD03E67964DAFFE5E86151AFEADB8D8F /* TableView.swift */; };
 		0F57BD1820CE061C00F71A63 /* SimplePlaceHolderTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F57BD1720CE061C00F71A63 /* SimplePlaceHolderTableCell.swift */; };
 		0F57BD1A20CE079100F71A63 /* SimplePlaceHolderTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F57BD1920CE079100F71A63 /* SimplePlaceHolderTableCell.xib */; };
+		0F57BD1C20CE247900F71A63 /* SimplePlaceHolderCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F57BD1B20CE247900F71A63 /* SimplePlaceHolderCollectionCell.swift */; };
+		0F57BD2020CE252400F71A63 /* SimplePlaceHolderCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F57BD1F20CE252400F71A63 /* SimplePlaceHolderCollectionCell.xib */; };
 		16A0756DDF8EDB63BC9D681D774E4046 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80680092EC646C9F5B66BABFE411B8F /* NibLoadable.swift */; };
 		188B2D39A18542546FF1D117238F1C79 /* PlaceholderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0197C003CD7180ECA3123696BCB689 /* PlaceholderStyle.swift */; };
 		1EFBAE800B9E6D9F44320A2080137B30 /* PlaceholderTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 8873BE641317A91432986B1A3B81ADE4 /* PlaceholderTableViewCell.xib */; };
@@ -57,6 +59,8 @@
 		0BFBEE7840CD05696824A48AD8CF8302 /* HGPlaceholders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HGPlaceholders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F57BD1720CE061C00F71A63 /* SimplePlaceHolderTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePlaceHolderTableCell.swift; sourceTree = "<group>"; };
 		0F57BD1920CE079100F71A63 /* SimplePlaceHolderTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimplePlaceHolderTableCell.xib; sourceTree = "<group>"; };
+		0F57BD1B20CE247900F71A63 /* SimplePlaceHolderCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePlaceHolderCollectionCell.swift; sourceTree = "<group>"; };
+		0F57BD1F20CE252400F71A63 /* SimplePlaceHolderCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimplePlaceHolderCollectionCell.xib; sourceTree = "<group>"; };
 		13B949EB7BB812B7ED9558698943EF83 /* PlaceholderTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaceholderTableViewCell.swift; sourceTree = "<group>"; };
 		141D603145EC1AD77A943821F9EE0F60 /* Pods-HGPlaceholders_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HGPlaceholders_Example-resources.sh"; sourceTree = "<group>"; };
 		17A9DD2D05C2D2FDBFD14677851E6497 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -312,6 +316,8 @@
 				8873BE641317A91432986B1A3B81ADE4 /* PlaceholderTableViewCell.xib */,
 				0F57BD1720CE061C00F71A63 /* SimplePlaceHolderTableCell.swift */,
 				0F57BD1920CE079100F71A63 /* SimplePlaceHolderTableCell.xib */,
+				0F57BD1B20CE247900F71A63 /* SimplePlaceHolderCollectionCell.swift */,
+				0F57BD1F20CE252400F71A63 /* SimplePlaceHolderCollectionCell.xib */,
 			);
 			name = Cells;
 			path = HGPlaceholders/Classes/Cells;
@@ -441,6 +447,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F57BD2020CE252400F71A63 /* SimplePlaceHolderCollectionCell.xib in Resources */,
 				0F57BD1A20CE079100F71A63 /* SimplePlaceHolderTableCell.xib in Resources */,
 				F1C321BA3072C80E3BD06A38D5C24A59 /* Assets.xcassets in Resources */,
 			);
@@ -464,6 +471,7 @@
 				7348205110780D4DA1D87DB0008C1AF2 /* CellPlaceholding.swift in Sources */,
 				2B46B6F94E8F084000FB951639FAEC00 /* CollectionView+Switcher.swift in Sources */,
 				52CD25468E069843CFF033FF9D850A64 /* CollectionView.swift in Sources */,
+				0F57BD1C20CE247900F71A63 /* SimplePlaceHolderCollectionCell.swift in Sources */,
 				A9998B3D784C949F8D3686ED11EDF29B /* ErrorMessage.swift in Sources */,
 				0F57BD1820CE061C00F71A63 /* SimplePlaceHolderTableCell.swift in Sources */,
 				BEF9E68B1B4647CEAB16FB81ED72B825 /* HGPlaceholders-dummy.m in Sources */,
@@ -522,7 +530,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/HGPlaceholders/HGPlaceholders-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/HGPlaceholders/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/HGPlaceholders/HGPlaceholders.modulemap";
 				PRODUCT_NAME = HGPlaceholders;
@@ -803,7 +811,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/HGPlaceholders/HGPlaceholders-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/HGPlaceholders/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/HGPlaceholders/HGPlaceholders.modulemap";
 				PRODUCT_NAME = HGPlaceholders;
