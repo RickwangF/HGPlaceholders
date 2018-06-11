@@ -209,7 +209,14 @@ extension PlaceholderDataSourceDelegate: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let collectionViewHeight = height(of: collectionView)
-        return CGSize(width: collectionView.bounds.width, height: collectionViewHeight)
+        var width:CGFloat = 0
+        if let flowLayout = collectionViewLayout as? UICollectionViewFlowLayout{
+            width = collectionView.bounds.width - (flowLayout.sectionInset.left + flowLayout.sectionInset.right)
+        }
+        else{
+            width = collectionView.bounds.width
+        }
+        return CGSize(width: width, height: collectionViewHeight)
     }
 }
 
