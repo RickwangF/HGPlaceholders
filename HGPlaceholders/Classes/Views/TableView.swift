@@ -119,6 +119,9 @@ open class TableView: UITableView {
     /// The defaultTableViewFooter is used to save the tableview footer when you switch to placeholders
     fileprivate var defaultTableFooterView: UIView?
     
+    /// the placeHolderStatus is used to show tableview's current status
+    var placeHolderStatus: PlaceHolderStatusEnum?
+    
     // MARK: - init methods
     
     /**
@@ -161,6 +164,8 @@ open class TableView: UITableView {
         
         defaultTableHeaderView = tableHeaderView
         defaultTableFooterView = tableFooterView
+        
+        placeHolderStatus = .Default
         
         customSetup()
     }

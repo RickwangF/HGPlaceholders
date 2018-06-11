@@ -17,6 +17,7 @@ extension TableView: PlaceholdersSwitcher {
             return
         }
         self.switchTo(dataSource: dataSource, delegate: dataSource)
+        self.placeHolderStatus = .Loading
     }
     
     public func showNoResultsPlaceholder() {
@@ -25,6 +26,7 @@ extension TableView: PlaceholdersSwitcher {
             return
         }
         self.switchTo(dataSource: dataSource, delegate: dataSource)
+        self.placeHolderStatus = .NoResult
     }
     
     public func showErrorPlaceholder() {
@@ -33,6 +35,7 @@ extension TableView: PlaceholdersSwitcher {
             return
         }
         self.switchTo(dataSource: dataSource, delegate: dataSource)
+        self.placeHolderStatus = .Error
     }
     
     public func showNoConnectionPlaceholder() {
@@ -41,6 +44,7 @@ extension TableView: PlaceholdersSwitcher {
             return
         }
         self.switchTo(dataSource: dataSource, delegate: dataSource)
+        self.placeHolderStatus = .NoConnection
     }
     
     public func showCustomPlaceholder(with key: PlaceholderKey) {
@@ -49,10 +53,12 @@ extension TableView: PlaceholdersSwitcher {
             return
         }
         self.switchTo(dataSource: dataSource, delegate: dataSource)
+        self.placeHolderStatus = .Custom
     }
     
     public func showDefault() {
         self.switchTo(dataSource: defaultDataSource, delegate: defaultDelegate)
+        self.placeHolderStatus = .Default
     }
     
 }

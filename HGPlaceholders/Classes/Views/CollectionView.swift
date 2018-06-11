@@ -89,6 +89,9 @@ open class CollectionView: UICollectionView {
     /// The placeholderLayout used to show placeholder cell in the UICollectionView size
     fileprivate let placeholderLayout = UICollectionViewFlowLayout()
     
+    /// the placeHolderStatus is used to show collectionView's current status
+    var placeHolderStatus: PlaceHolderStatusEnum?
+    
     // MARK: - init methods
     
     /**
@@ -127,6 +130,8 @@ open class CollectionView: UICollectionView {
         register(cellType: SimplePlaceHolderCollectionCell.self)
         defaultAlwaysBounceVertical = alwaysBounceVertical
         defaultLayout = collectionViewLayout
+        
+        placeHolderStatus = .Default
         customSetup()
     }
     
