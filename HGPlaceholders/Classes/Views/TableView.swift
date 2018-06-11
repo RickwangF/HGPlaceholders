@@ -154,7 +154,7 @@ open class TableView: UITableView {
      */
     private func setup() {
         // register the placeholder view cell
-        register(cellType: PlaceholderTableViewCell.self)
+        register(cellType: SimplePlaceHolderTableCell.self)
         
         defaultSeparatorStyle = separatorStyle
         defaultAlwaysBounceVertical = alwaysBounceVertical

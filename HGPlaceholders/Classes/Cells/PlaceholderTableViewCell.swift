@@ -15,11 +15,17 @@ open class PlaceholderTableViewCell: UITableViewCell {
     
     // MARK: Properties 
     
-    @IBOutlet weak var titleLabel: UILabel?
-    @IBOutlet weak var subtitleLabel: UILabel?
-    @IBOutlet weak var placeholderImageView: UIImageView?
-    @IBOutlet weak var actionButton: UIButton?
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView?
+    var titleLabel: UILabel?
+    var subtitleLabel: UILabel?
+    var placeholderImageView: UIImageView?
+    var actionButton: UIButton?
+    var activityIndicator: UIActivityIndicatorView?
+    
+//    @IBOutlet weak var titleLabel: UILabel?
+//    @IBOutlet weak var subtitleLabel: UILabel?
+//    @IBOutlet weak var placeholderImageView: UIImageView?
+//    @IBOutlet weak var actionButton: UIButton?
+//    @IBOutlet weak var activityIndicator: UIActivityIndicatorView?
     
     var cellView: UIView {
         return self
@@ -33,8 +39,8 @@ open class PlaceholderTableViewCell: UITableViewCell {
     }
 }
 
-extension PlaceholderTableViewCell: NibLoadable {}
-extension PlaceholderTableViewCell: Reusable {}
-extension PlaceholderTableViewCell: CellPlaceholding {}
+//extension PlaceholderTableViewCell: NibLoadable {}
+//extension PlaceholderTableViewCell: Reusable {}
+//extension PlaceholderTableViewCell: CellPlaceholding {}
 
 

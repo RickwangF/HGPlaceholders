@@ -100,7 +100,7 @@ extension PlaceholderDataSourceDelegate: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let reuseIdentifier = placeholder.cellIdentifier ?? PlaceholderTableViewCell.reuseIdentifier
+        let reuseIdentifier = placeholder.cellIdentifier ?? SimplePlaceHolderTableCell.reuseIdentifier
         guard let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier) else {
             fatalError(
                 "Failed to dequeue a cell with identifier \(reuseIdentifier). "
@@ -111,7 +111,7 @@ extension PlaceholderDataSourceDelegate: UITableViewDataSource {
        
         cell.selectionStyle = .none
         // If the cell does not inherit from PlaceholderTableViewCell, the data and the style can't be applied
-        guard let placeholderTableViewCell = cell as? PlaceholderTableViewCell else {
+        guard let placeholderTableViewCell = cell as? SimplePlaceHolderTableCell else {
             return cell
         }
         
@@ -162,7 +162,7 @@ extension PlaceholderDataSourceDelegate: UITableViewDelegate {
             return
         }
         
-        guard let placeholderTableViewCell = cell as? PlaceholderTableViewCell else { return }
+        guard let placeholderTableViewCell = cell as? SimplePlaceHolderTableCell else { return }
         animate(cell: placeholderTableViewCell)
     }
 }
