@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -57,11 +56,10 @@
             </view>
             <constraints>
                 <constraint firstItem="b9Q-S0-ytC" firstAttribute="top" secondItem="z4l-lc-iu5" secondAttribute="bottom" constant="10" id="Oxr-3p-HEF"/>
-                <constraint firstItem="z4l-lc-iu5" firstAttribute="centerX" secondItem="K8J-6v-0dp" secondAttribute="centerX" id="Pbz-zZ-BZt"/>
-                <constraint firstItem="b9Q-S0-ytC" firstAttribute="centerX" secondItem="K8J-6v-0dp" secondAttribute="centerX" id="SpA-dd-LXq"/>
-                <constraint firstItem="z4l-lc-iu5" firstAttribute="centerY" secondItem="K8J-6v-0dp" secondAttribute="centerY" id="bDw-3K-ywd"/>
+                <constraint firstItem="z4l-lc-iu5" firstAttribute="centerX" secondItem="wJ4-eN-57G" secondAttribute="centerX" id="Pbz-zZ-BZt"/>
+                <constraint firstItem="b9Q-S0-ytC" firstAttribute="centerX" secondItem="wJ4-eN-57G" secondAttribute="centerX" id="SpA-dd-LXq"/>
+                <constraint firstItem="z4l-lc-iu5" firstAttribute="centerY" secondItem="wJ4-eN-57G" secondAttribute="centerY" id="bDw-3K-ywd"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="K8J-6v-0dp"/>
             <size key="customSize" width="320" height="150"/>
             <connections>
                 <outlet property="activityIndicator" destination="b9Q-S0-ytC" id="zCQ-e0-MgJ"/>
