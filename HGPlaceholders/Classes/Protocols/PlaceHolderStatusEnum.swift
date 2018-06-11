@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum PlaceHolderStatusEnum: Int{
+public enum PlaceHolderStatusEnum: Int{
     
     case Default = 0
     
